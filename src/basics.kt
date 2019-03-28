@@ -7,8 +7,13 @@ fun foo():String{
     return "foo"
 }
 
-output
+//output
+//
+//calculating to....
+//calculating to....
+//First foo, Second foo
 
-calculating to....
-calculating to....
-First foo, Second foo
+kotlin variables
+
+        i val comes from value Read-Only correspondes final variable in java
+        ii var comes from variable , mutable variable
