@@ -1,29 +1,29 @@
-in java
+ in java
 
 public class Person {
 
-   private final String name;
-   private final int age;
+    private final String name;
+    private final int age;
 
-   public Person(String name,int age){
-       this.name = name;
-       this.age = age;
-   }
+    public Person(String name,int age){
+        this.name = name;
+        this.age = age;
+    }
 
-   public String getname(){
-       return name;
-   }
+    public String getname(){
+        return name;
+    }
 
-   public int getage(){
-       return age;
-   }
+    public int getage(){
+        return age;
+    }
 }
 
-in Kotlin
+ in Kotlin
 
 class Person(val name:String, val age:Int)
 
-Done, all the constructor and the getter all together
+ Done, all the constructor and the getter all together
 
 in java
 
@@ -66,5 +66,16 @@ fun updateweather(degrees : Int){
         degrees < 5 -> Pair("Cold",BLUE)
         degrees < 23 -> Pair("Mid",ORABGE)
         else -> Pair("Hot",RED)
+    }
+}
+
+more short using to keyword
+
+fun updateweather(degrees : Int){
+
+    val(description:String , colour:Colour)= when{
+        degrees < 5 -> "Cold" to BLUE
+        degrees < 23 -> "Mid" to ORABGE
+        else -> "Hot" to RED
     }
 }
