@@ -38,6 +38,41 @@ transformed to
 fun checksmall(a : Int, b : Int):Int = if (a < b) a else b
 
 
+
+## Named and Default Argument
+
+# Named
+println(listof('a','b','c').joinToString(
+      separator="", prefix = "(",posyfix = ")")))
+
+# output
+abc
+
+# Default
+
+println(listof(1,2,3).joinToString(posyfix = "."))
+
+# output 
+1,2.3.
+
+## Functions: default values
+
+fun displaySeparator(character : Char="*", size : Int = 10){
+       repeat(size){
+         print(character)
+       }
+}
+
+## to achive this we use overload in java, which is too much heavier than this
+
+
+
+## Control Structer
+
+# if and when
+
+
+
  in java
 
 public class Person {
