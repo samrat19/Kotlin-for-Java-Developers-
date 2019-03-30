@@ -48,7 +48,7 @@ println(listof('a','b','c').joinToString(
 # output
 abc
 
-# Default
+# Default Arguments
 
 println(listof(1,2,3).joinToString(posyfix = "."))
 
@@ -71,9 +71,93 @@ fun displaySeparator(character : Char="*", size : Int = 10){
 
 # if and when
 
+val max = if(a . b) a else b
 
+# there is no ternary operator in kotlin then no operation like this => (a>b)?a:b
 
- in java
+# now the when keyword in kotlin
+
+# to achieve the switch case we use when
+
+# in java
+
+String description;
+
+switch(colour){
+
+    case BLUE: description = "Cold";
+    break;
+    
+    case ORANGE: description = "Mid";
+    break;
+}
+
+# in kotlin
+
+val description = when(colour){
+
+   BLUE -> "Cold"
+   ORANGE -> "Mid"
+   
+}
+
+# loops 
+
+# for loop
+
+val a = listOf("a","b","c")
+
+for(s in a){
+  
+   print(s)
+}
+
+val a = listOf("a","b","c")
+
+for((index,element) in a.withIndex()){
+  
+   print("$index : $element")
+}
+
+val map = mapOf(
+               1 to "One",
+               2 to "Two",
+               3 to "Three")
+               
+for((key , value) in map){
+
+     println("$key = $value")
+}
+
+# output
+
+for(number in 1..10){
+
+    println(number)
+}
+
+# output 
+
+for(number in 1 until 10){
+
+    println(number)
+}
+
+# output 
+
+for( ch in "abc"){
+
+   print(ch + 1)
+}
+
+# output  bcd
+
+for( number in 10 downTo1 step 2){
+
+    print(number)
+}
+
+# in java
 
 public class Person {
 
